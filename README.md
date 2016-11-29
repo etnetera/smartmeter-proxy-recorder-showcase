@@ -19,5 +19,5 @@ Note:
 
 Showcase was prepared for SmartMeter.io 1.2.0 version.
 
-Java tests runs Selenium WebDriver 3.0.1 version which is compatible with Firefox 48+. 
-You need to set JVM system property *webdriver.gecko.driver* and point it to [geckodriver](https://github.com/mozilla/geckodriver) binary which can be downloaded [here](https://github.com/mozilla/geckodriver/releases).
+Java tests runs Selenium WebDriver 2.53.1 version which is compatible with Firefox 47. For new Firefox version use updated version of Selenium WebDriver.
+Do not use Selenium WebDriver 3.0.1 as it needs to use [geckodriver](https://github.com/mozilla/geckodriver) and its latest version has issues with setting the proxy.
