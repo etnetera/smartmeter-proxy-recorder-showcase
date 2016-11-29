@@ -20,9 +20,13 @@ public class AcademyTest {
 
 	private static final String SM_RECORDING_PROXY = "localhost:8080";
 
-	private static final String SM_TEST_NAME = "academy-from-selenium";
+	private static final boolean EXPORT_SM_TEST = false;
+
+	private static final boolean CLEAR_SM_RECORDING = false;
 
 	private static final boolean RUN_SM_TEST = false;
+
+	private static final String SM_TEST_NAME = "academy-from-selenium";
 
 	private static final long SM_PAUSE_DURATION_MILLIS = 5000;
 
@@ -81,8 +85,8 @@ public class AcademyTest {
 
 		if (USE_SM_RECORDER) {
 			smRecorderApi.finishSubtest();
-			smRecorderApi.exportTest(SM_TEST_NAME);
-			smRecorderApi.clearRecording();
+			if (EXPORT_SM_TEST) smRecorderApi.exportTest(SM_TEST_NAME);
+			if (CLEAR_SM_RECORDING) smRecorderApi.clearRecording();
 			if (RUN_SM_TEST) smRecorderApi.runTest(SM_TEST_NAME, null, null);
 		}
 	}

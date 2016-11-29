@@ -1,7 +1,7 @@
 SmartMeter.io Smart proxy recorder showcase
 -------------------------------------------
 Demonstrates the capabilities of the SmartMeter.io [Smart proxy recorder](https://www.smartmeter.io/documentation#toc-smart-proxy-recorder).
-It contains Selenium WebDriver test enhanced with requests to Smart proxy recorder.
+It contains [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) test enhanced with requests to Smart proxy recorder.
 
 To follow the showcase:
 -----------------------
@@ -19,4 +19,5 @@ Note:
 
 Showcase was prepared for SmartMeter.io 1.2.0 version.
 
-Java tests runs Selenium WebDriver 2.53.1 version which is compatible with Firefox 47. For new Firefox version use updated version of Selenium WebDriver.
+Java tests runs Selenium WebDriver 3.0.1 version which is compatible with Firefox 48+. 
+You need to set JVM system property *webdriver.gecko.driver* and point it to [geckodriver](https://github.com/mozilla/geckodriver) binary which can be downloaded [here](https://github.com/mozilla/geckodriver/releases).
