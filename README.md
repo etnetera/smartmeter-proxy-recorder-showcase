@@ -19,5 +19,10 @@ Note:
 
 Showcase was prepared for SmartMeter.io 1.2.0 version.
 
-Java tests runs Selenium WebDriver 2.53.1 version which is compatible with Firefox 47. For new Firefox version use updated version of Selenium WebDriver.
-Do not use Selenium WebDriver 3.0.1 as it needs to use [geckodriver](https://github.com/mozilla/geckodriver) and its latest version has issues with setting the proxy.
+Java tests runs Selenium WebDriver 2.53.1 version which is compatible with Firefox 47.
+Do not use Selenium WebDriver 3.0.1 as it controls Firefox with [geckodriver](https://github.com/mozilla/geckodriver) and its latest version has issues with setting the proxy.
+
+If you have a newer version of Firefox than 47 (probably yes), then please install second Firefox. 
+For Mac OS X or Linux download and install additional Firefox binary from [official releases](https://ftp.mozilla.org/pub/firefox/releases/47.0.1/). 
+For Windows download and install [portable Firefox](http://downloads.sourceforge.net/portableapps/FirefoxPortable_47.0.1_English.paf.exe) provided by [PortableApps.com](http://portableapps.com/). 
+Then you need set JVM system property *webdriver.firefox.bin* and point it to installed binary. 
